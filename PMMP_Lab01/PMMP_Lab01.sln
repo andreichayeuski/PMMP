@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMMP_Lab01", "PMMP_Lab01\PMMP_Lab01.csproj", "{E649EB12-83B8-4081-9359-96ED9B767449}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E649EB12-83B8-4081-9359-96ED9B767449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E649EB12-83B8-4081-9359-96ED9B767449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E649EB12-83B8-4081-9359-96ED9B767449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E649EB12-83B8-4081-9359-96ED9B767449}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88265F5D-ABCF-420F-BBBB-1E7CB4A9258B}
+	EndGlobalSection
+EndGlobal
