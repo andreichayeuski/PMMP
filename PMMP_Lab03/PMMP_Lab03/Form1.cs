@@ -124,7 +124,7 @@ namespace PMMP_Lab03
             Mat frame1 = new Mat();//;
             _capture.Retrieve(frame);
             _capture.Retrieve(frame1);
-
+            CvInvoke.MedianBlur(frame1, frame, 5);//new Size { Height = 1, Width = 1 }, 1);
             if (RetrieveBgrFrame.Checked)
             {
                 //because we are using an autosize picturebox we need to do a thread safe update
@@ -139,19 +139,19 @@ namespace PMMP_Lab03
             {
                 CvInvoke.Sobel(frame, frame, Emgu.CV.CvEnum.DepthType.Default, 1, 1);
                 //because we are using an autosize picturebox we need to do a thread safe update
-                DisplayImage(frame.ToImage<Bgr, byte>().ToBitmap());
+                DisplayImage(frame.ToImage<Gray, byte>().ThresholdBinary(new Gray(10), new Gray(255)).ToBitmap());
             }
             if (RetrieveLaplas.Checked)
             {
                 CvInvoke.Laplacian(frame, frame, Emgu.CV.CvEnum.DepthType.Default);
                 //because we are using an autosize picturebox we need to do a thread safe update
-                DisplayImage(frame.ToImage<Gray, byte>().ToBitmap());
+                DisplayImage(frame.ToImage<Gray, byte>().ThresholdBinary(new Gray(10), new Gray(255)).ToBitmap());
             }
             if (RetrieveKanny.Checked)
             {
                 CvInvoke.Canny(frame1, frame, 10, 10, apertureSize:3);
                 //because we are using an autosize picturebox we need to do a thread safe update
-                DisplayImage(frame.ToImage<Bgr, byte>().ToBitmap());
+                DisplayImage(frame.ToImage<Gray, byte>().ThresholdBinary(new Gray(10), new Gray(255)).ToBitmap());
             }
         }
 
