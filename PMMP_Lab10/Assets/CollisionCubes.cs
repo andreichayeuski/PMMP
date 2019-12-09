@@ -16,7 +16,10 @@ public class CollisionCubes : MonoBehaviour
     }
     private void OnCollisionEnter(Collision myCollision)
     {
-        myCollision.gameObject
-            .GetComponent<Rigidbody>().AddForce(0, 0, 1000);
+        if (myCollision.gameObject.name != "Plane")
+        {
+            myCollision.gameObject
+                .GetComponent<Rigidbody>().AddForce(0, 0, 1000);
+        }
     }
 }

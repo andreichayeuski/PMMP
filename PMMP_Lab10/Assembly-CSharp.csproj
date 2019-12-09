@@ -67,6 +67,7 @@
     <Compile Include="Assets\CollisionScript.cs" />
     <Compile Include="Assets\Destroyyyy.cs" />
     <Compile Include="Assets\ForceCubes.cs" />
+    <Compile Include="Assets\Gun.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Документы/Университет/7 семестр/Программирование мультимедийных и многомерных приложений/PMMP/PMMP_Lab10/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
