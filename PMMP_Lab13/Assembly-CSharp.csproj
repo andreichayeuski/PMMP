@@ -63,8 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\LeftPlayer.cs" />
+    <Compile Include="Assets\Scripts\PuckScript.cs" />
     <Compile Include="Assets\Scripts\RightPlayer.cs" />
+    <Compile Include="Assets\Scripts\ScoreScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Документы/Университет/7 семестр/Программирование мультимедийных и многомерных приложений/PMMP/PMMP_Lab13/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
