@@ -40,8 +40,9 @@ public class PuckScript : MonoBehaviour
         audioManager.PlayPuckCollision();
     }
 
-    private IEnumerator ResetPuck()
+    public IEnumerator ResetPuck()
     {
+        
         yield return new WaitForSecondsRealtime(0.3f);
         WasGoal = false;
         rb.velocity = rb.position = new Vector2(0, 0);

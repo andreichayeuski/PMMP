@@ -6,9 +6,14 @@ public class RightPlayer : MonoBehaviour
 {
     public float Speed = 20f;
     float positionY = 1;
-    float positionX = 1;
+    float positionX = 1; 
+    private Rigidbody2D rb;
+    private Vector2 startingPosition;
+
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        startingPosition = rb.position;
     }
 
     void Update()
@@ -46,5 +51,9 @@ public class RightPlayer : MonoBehaviour
         {
             myCollision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(positionX, positionY), ForceMode2D.Impulse);
         }
+    }
+    public void ResetPosition()
+    {
+        rb.position = startingPosition;
     }
 }

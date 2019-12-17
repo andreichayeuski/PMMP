@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioClip PuckCollision;
     public AudioClip Goal;
+    public AudioClip EndGame;
 
     private AudioSource audioSource;
 
@@ -22,5 +23,9 @@ public class AudioManager : MonoBehaviour
     public void PlayGoal()
     {
         audioSource.PlayOneShot(Goal);
+    }
+    public void PlayEndGame()
+    {
+        audioSource.PlayOneShot(EndGame);
     }
 }
